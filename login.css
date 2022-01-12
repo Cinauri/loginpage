@@ -114,19 +114,6 @@ h1 {
     padding-left: 0.5vw;
 }
 
-h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2vh;
-    color: rgba(28,55,99,0.7);
-    font-weight: bold;
-    display: inline-block;
-    width: 64%;
-}
-
-.aeon{
-   display: none;
-}
-
 @media screen and (max-width: 800px) {
   
     .signinpage {
