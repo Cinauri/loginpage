@@ -1,0 +1,149 @@
+body {
+    background: linear-gradient(to right, #1C3763, #BB3B56);
+  }
+
+.backgroundimg {
+    height: 95%;
+    width: 95%;
+
+}
+
+.signinpage {
+    transition: 1s;
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: left;
+
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 30vh;
+    padding-right: 3.5vw;
+    flex: 1;
+    flex-direction: column;
+
+    
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform:  translateY(-50%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input:focus {
+    outline: none;
+    background-color: #6C324F;
+    transform: translateX(1%);
+    transition: 0.4s;
+}
+
+.email::placeholder, .password::placeholder {
+    color: white;
+    opacity: 0.9;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.email, .password, .submit {
+    color: white;
+    background-color: transparent;
+    width: 64%;
+    margin: 1vh;
+    border-radius: 50px;
+    padding: 2.2vh 2vw;
+    border: 1.5px solid white;
+    font-size: 2vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.email:valid, .password:valid {
+    border: 1.5px solid rgba(0,255,0,0.2);
+}
+
+.submit {
+    border: none;
+    font-weight: 600;
+    font-size: 2vh;
+
+    background: linear-gradient(to left, #1C3763 50%, #3862AF 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.submit:hover {
+    background-color: #3862AF;
+    transition: 0.5s, 0.5s;
+    transform: translateX(1%);
+    transition: 0.4s;
+    background-position: left;
+    
+}
+
+.smalltext {
+    width: 64%
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5vh;
+    text-align: right;
+}
+
+span:hover {
+    cursor: pointer; 
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; 
+    color: white;
+    display: inline-block;
+    padding-left: 0.5vw;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    color: rgba(28,55,99,0.7);
+    font-weight: bold;
+    display: inline-block;
+    width: 64%;
+}
+
+.aeon{
+   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  
+    .signinpage {
+        width: 100%;
+        padding: 4vw;
+    }
+
+    body {
+        background: linear-gradient( #1C3763, #BB3B56);
+        height: 100vh;
+      }
+    
+    .email, .password, .submit, .smalltext {
+        width: 95%;
+    }
+    .backgroundimg {
+        display:none;
+    }
+    
+}
